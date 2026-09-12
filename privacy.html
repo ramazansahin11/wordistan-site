@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gizlilik Politikası — Wordistan</title>
-  <meta name="description" content="Wordistan gizlilik politikası ve kişisel veri koruma ilkeleri.">
+  <meta name="description" content="Wordistan gizlilik politikası, veri güvenliği ve kişisel veri işleme ilkeleri.">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -32,62 +32,65 @@
     <header class="doc-header">
       <span class="badge">Gizlilik & Güvenlik</span>
       <h1 class="doc-title">Gizlilik Politikası</h1>
-      <p class="doc-subtitle">Kişisel verilerinizin güvenliğine ve mahremiyetine en üst düzeyde önem veriyoruz.</p>
+      <p class="doc-subtitle">Kişisel verilerinizin güvenliğine, mahremiyetine ve şeffaf işlenmesine en üst düzeyde önem veriyoruz.</p>
       <span class="last-updated">Son Güncelleme: 12 Eylül 2026</span>
     </header>
 
     <div class="legal-card">
       <section class="legal-section">
         <h2>1. Giriş</h2>
-        <p>Bu Gizlilik Politikası, <strong>Wordistan</strong> ("Uygulama") tarafından sunulan iOS ve Android mobil uygulamalarını kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklamaktadır.</p>
-        <p>Uygulamamızı indirerek, kurarak veya kullanarak bu Gizlilik Politikasında belirtilen veri işleme faaliyetlerini kabul etmiş olursunuz. Apple App Store ve Google Play Store Geliştirici Politikaları ile 6698 sayılı KVKK ve GDPR uyumluluğu gözetilmektedir.</p>
+        <p>Bu Gizlilik Politikası, <strong>Wordistan</strong> ("Uygulama") geliştirici ekibi tarafından sunulan iOS ve Android mobil uygulamalarını kullandığınızda kişisel verilerinizin nasıl toplandığını, işlendiğini, saklandığını ve korunduğunu açıklamaktadır.</p>
+        <p>Uygulamamızı indirerek, kurarak veya kullanarak bu Gizlilik Politikasında açıklanan veri işleme esaslarını kabul etmiş sayılırsınız. Politikamız Apple App Store İnceleme Yönergeleri (Guideline 5.1), Google Play Geliştirici Politikaları, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Genel Veri Koruma Tüzüğü (GDPR) ile tam uyumludur.</p>
       </section>
 
       <section class="legal-section">
         <h2>2. Toplanan Bilgiler</h2>
         <ul>
-          <li><strong>Hesap Bilgileri:</strong> Kayıtlı kullanıcılar için e-posta adresi, kullanıcı adı, profil avatarı. Misafir kullanıcılar için rastgele anonim kimlik (UUID).</li>
-          <li><strong>Oyun İstatistikleri:</strong> ELO puanı, kazanılan/kaybedilen maçlar, günlük kelime serileri (streak), sanal coin miktarı ve lig derecesi.</li>
-          <li><strong>Cihaz ve Ağ Verileri:</strong> Canlı düellolarda adil eşleşme için geçici IP adresi, cihaz modeli, işletim sistemi ve uygulama sürümü.</li>
-          <li><strong>Finansal Bilgiler:</strong> Kredi kartı veya ödeme bilgileriniz tarafımızca <u>kesinlikle toplanmaz</u>. Tüm satın alımlar doğrudan <strong>Apple StoreKit</strong> ve <strong>Google Play Billing</strong> üzerinden yürütülür.</li>
+          <li><strong>Hesap ve Kimlik Bilgileri:</strong> Kayıtlı kullanıcılar için e-posta adresi, kullanıcı adı ve seçilen profil avatarı. Google veya Apple ile oturum açıldığında kimlik doğrulama servisince sağlanan benzersiz kullanıcı belirteci. Misafir (anonim) kullanıcılar için ise cihaz bazlı rastgele UUID tanımlayıcısı.</li>
+          <li><strong>Oyun ve Performans İstatistikleri:</strong> ELO puanı, tamamlanan 1v1 düello maç sayıları, galibiyet/mağlubiyet geçmişi, bulunan kelimeler, günlük kelime çözümleri, galibiyet serisi (streak) ve lig derecesi (Bronz, Gümüş, Altın, Elmas, Şampiyon).</li>
+          <li><strong>Cihaz, Ağ ve Oturum Verileri:</strong> Canlı düellolarda adil eşleşme, anti-hile kontrolü ve bağlantı kararlılığı için geçici IP adresi, ping süreleri, cihaz modeli, işletim sistemi sürümü ve uygulama içi yerel tercihler (ses, titreşim, bildirim ayarları).</li>
+          <li><strong>Finansal Bilgiler:</strong> Kredi kartı, banka kartı veya fatura bilgileriniz tarafımızca <u>asla toplanmaz, işlenmez ve saklanmaz</u>. Tüm uygulama içi satın alımlar (Wordistan Pro / Reklamsız Deneyim) doğrudan <strong>Apple App Store (StoreKit)</strong> ve <strong>Google Play Billing</strong> güvenli altyapıları üzerinden gerçekleşir.</li>
         </ul>
       </section>
 
       <section class="legal-section">
-        <h2>3. Üçüncü Taraf Hizmetler</h2>
+        <h2>3. Entegre Edilen Üçüncü Taraf Hizmetler & SDK'lar</h2>
         <ul>
-          <li><strong>Google AdMob:</strong> Ücretsiz kullanıcılara reklam sunmak amacıyla Google Reklam Tanımlayıcısı (IDFA/GAID) kullanılabilir. Cihaz ayarlarınızdan kişiselleştirilmiş reklamları kapatabilirsiniz.</li>
-          <li><strong>Supabase Cloud:</strong> Kimlik doğrulama, kullanıcı profili ve canlı maç kanalları için AB (Frankfurt) veri merkezlerinde GDPR uyumlu olarak barındırılır. Row Level Security (RLS) ile korunur.</li>
-          <li><strong>App Store / Google Play:</strong> Pro abonelik durumunun doğrulanması ve senkronizasyonu için kullanılır.</li>
+          <li><strong>Supabase Cloud:</strong> Kullanıcı kimlik doğrulama, güvenli bulut veritabanı, oturum yönetimi ve canlı 1v1 düello Realtime kanalları için kullanılır. Veriler Avrupa Birliği (Frankfurt, Almanya) merkezli GDPR uyumlu veri merkezlerinde barındırılır ve Row Level Security (RLS) politikalarıyla korunur.</li>
+          <li><strong>Google Mobile Ads (AdMob):</strong> Günde 8 düellodan fazla oynayan ücretsiz kullanıcılara geçiş reklamları (Interstitial) ve günlük kelime ipucu için isteğe bağlı ödüllü videolar (Rewarded) sunmak amacıyla Google Reklam Tanımlayıcısı (IDFA / GAID) kullanılabilir. Cihaz ayarlarınızdan kişiselleştirilmiş reklamları kapatabilirsiniz. Pro kullanıcılara reklam gösterilmez.</li>
+          <li><strong>RevenueCat Inc.:</strong> Uygulama içi satın alımların, Wordistan Pro reklamsız lisans haklarının ve aboneliklerin platformlar arası (iOS/Android) doğrulanması ve "Satın Alımları Geri Yükle" işlemleri için kullanılır.</li>
+          <li><strong>Cihaz Seviyesinde Yerel Bildirimler:</strong> Sabah günlük kelime uyarısı ve akşam seri koruma hatırlatıcıları doğrudan cihaz üzerinde yerel olarak zamanlanır. Bildirim amacıyla harici sunuculara herhangi bir kişisel veri aktarılmaz.</li>
         </ul>
       </section>
 
       <section class="legal-section">
         <h2>4. Çocukların Gizliliği (COPPA & GDPR-K)</h2>
         <div class="callout callout-warning">
-          <strong>Önemli:</strong> Wordistan her yaştan kullanıcı için eğitici bir kelime oyunudur. 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamıyoruz. Uygunsuz içerik kelime veri tabanımızda yer almaz.
+          <strong>Önemli Taahhüt:</strong> Wordistan her yaştan kullanıcıya uygun eğitici bir Türkçe kelime oyunudur. 13 yaşın altındaki bireylerden bilerek ve ebeveyn onayı olmaksızın kişisel veri toplamıyoruz. Kelime havuzumuz argo, küfür ve zararlı ifadelerden filtrelenmiştir.
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>5. Hesap ve Veri Silme</h2>
-        <p>Apple App Store (Guideline 5.1.1) ve Google Play politikaları uyarınca hesabınızı ve tüm verilerinizi kalıcı olarak silme hakkına sahipsiniz:</p>
+        <h2>5. Hesap ve Kişisel Veri Silme Hakkı</h2>
+        <p>Apple App Store (Guideline 5.1.1(v)) ve Google Play Store veri güvenliği politikaları uyarınca hesabınızı ve tüm ilişkili verilerinizi kalıcı olarak silme hakkına sahipsiniz:</p>
         <div class="callout callout-success">
-          <strong>Uygulama İçinden:</strong> Profil → Ayarlar → "Hesabımı Sil" adımlarını izleyerek tek tıkla tüm kişisel verilerinizi kalıcı olarak silebilirsiniz.
+          <strong>Uygulama İçinden Doğrudan Silme (Önerilen):</strong><br>
+          Profil → Ayarlar → <strong>"Hesabımı Sil"</strong> butonuna dokunarak onay verdiğiniz anda profiliniz, ELO puanınız, maç geçmişiniz ve tüm kişisel verileriniz veritabanımızdan kalıcı olarak imha edilir.
         </div>
-        <p>Web üzerinden talep oluşturmak isterseniz <a href="support.html">Destek & Hesap Silme</a> sayfamızı ziyaret edin. Talebiniz en geç 24 saat içinde sonuçlandırılır.</p>
+        <p>Uygulamaya erişim sağlayamıyorsanız web üzerinden talep oluşturmak için <a href="support.html">Destek & Hesap Silme</a> sayfamızı kullanabilir veya doğrudan <a href="mailto:destek@wordistan.app">destek@wordistan.app</a> adresine e-posta gönderebilirsiniz. Talebiniz en geç 24 saat içinde yerine getirilir.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6. Veri Güvenliği</h2>
-        <p>Kişisel verileriniz TLS 1.3/SSL ile şifrelenir. Sunucu tarafında çift faktörlü güvenlik, şifreli token depolama ve veritabanı düzeyinde yetkilendirme (RLS) uygulanır.</p>
+        <h2>6. Veri Güvenliği ve Saklama</h2>
+        <p>Verileriniz aktarım esnasında endüstri standardı TLS 1.3/SSL şifreleme protokolü ile korunur. Sunucu tarafında çift faktörlü erişim denetimi, şifreli anahtar yönetimi ve PostgreSQL düzeyinde Row Level Security (RLS) kuralları uygulanmaktadır. Hesabınızı sildiğinizde tüm kayıtlar kalıcı ve geri döndürülemez biçimde yok edilir.</p>
       </section>
 
       <section class="legal-section">
-        <h2>7. İletişim</h2>
+        <h2>7. İletişim Bilgileri</h2>
+        <p>Gizlilik politikamız veya kişisel verilerinizin işlenmesi ile ilgili her türlü soru, görüş ve talepleriniz için bize ulaşabilirsiniz:</p>
         <ul>
           <li><strong>E-Posta:</strong> <a href="mailto:destek@wordistan.app">destek@wordistan.app</a></li>
-          <li><strong>Web:</strong> <a href="https://wordistan.app">wordistan.app</a></li>
+          <li><strong>Resmi Web Sitesi:</strong> <a href="https://wordistan.app">https://wordistan.app</a></li>
         </ul>
       </section>
     </div>
