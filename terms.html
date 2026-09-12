@@ -3,136 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kullanım Koşulları (Terms of Service / EULA) - Wordistan</title>
-  <meta name="description" content="Wordistan (Worthy Words) mobil kelime oyunu son kullanıcı lisans sözleşmesi ve kullanım kuralları.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Kullanım Koşulları — Wordistan</title>
+  <meta name="description" content="Wordistan kullanım koşulları, EULA ve abonelik şartları.">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand">
-        <div class="brand-icon">⚔️</div>
+        <img src="assets/app-icon.png" alt="Wordistan" class="brand-icon">
         <span>Wordistan</span>
       </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menü">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik</a></li>
-        <li><a href="terms.html" class="active">Kullanım Koşulları</a></li>
+        <li><a href="terms.html" class="active">Koşullar</a></li>
         <li><a href="kvkk.html">KVKK</a></li>
         <li><a href="support.html" class="btn-nav">Destek</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Content Container -->
   <main class="container">
     <header class="doc-header">
-      <div class="badge">⚖️ Yasal Sözleşme & EULA</div>
-      <h1 class="doc-title">Kullanım Koşulları</h1>
-      <p class="doc-subtitle">
-        Wordistan uygulamasını indirerek, yükleyerek veya oynayarak aşağıdaki kuralları ve şartları kabul etmiş sayılırsınız.
-      </p>
+      <span class="badge">Yasal Bilgiler</span>
+      <h1 class="doc-title">Kullanım Koşulları (EULA)</h1>
+      <p class="doc-subtitle">Uygulamayı kullanmaya devam ederek aşağıdaki şartları kabul etmiş olursunuz.</p>
       <span class="last-updated">Son Güncelleme: 12 Eylül 2026</span>
     </header>
 
     <div class="legal-card">
       <section class="legal-section">
-        <h2>1. Hizmetin Kapsamı ve Kabul</h2>
-        <p>
-          İşbu Kullanım Koşulları ve Son Kullanıcı Lisans Sözleşmesi ("Sözleşme"), <strong>Wordistan</strong> mobil uygulamasının kullanımına ilişkin kuralları belirler. Uygulamayı kullanarak Apple App Store veya Google Play Store şartlarının yanı sıra bu koşulları peşinen kabul etmiş olursunuz.
-        </p>
+        <h2>1. Kabul</h2>
+        <p>Wordistan uygulamasını indirerek, kurarak veya kullanarak bu Son Kullanıcı Lisans Sözleşmesi'ni (EULA) ve aşağıdaki tüm koşulları kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız uygulamayı kullanmayınız.</p>
       </section>
 
       <section class="legal-section">
-        <h2>2. Fair Play ve Hile / İstismar Yasağı</h2>
-        <p>
-          Wordistan'da tüm oyuncuların adil ve eğlenceli bir rekabet ortamında yarışması esastır. Aşağıdaki eylemler kesinlikle yasaktır:
-        </p>
+        <h2>2. Lisans ve Fikri Mülkiyet</h2>
+        <p>Wordistan size uygulamayı kişisel ve ticari olmayan amaçlarla kullanmanız için sınırlı, münhasır olmayan, devredilemez ve geri alınabilir bir lisans verir. Uygulamadaki tüm içerik, tasarım, kod, kelime veri tabanı ve görseller Wordistan'ın fikri mülkiyetidir.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3. Oyun Kuralları ve Davranış</h2>
         <ul>
-          <li>Kelime bulma botları, makrolar veya üçüncü taraf yardımcı hile yazılımları kullanmak,</li>
-          <li>Uygulama belleğini manipüle etmek, tersine mühendislik yapmak veya sahte API istekleri göndermek,</li>
-          <li>Birden fazla hesapla aynı anda eşleşerek haksız ELO puanı (boosting/win-trading) elde etmek,</li>
-          <li>Diğer oyuncuları rahatsız edici, tacizkar veya hakaret içeren kullanıcı adları seçmek.</li>
+          <li>Bot, makro, otomatik kelime bulucu veya herhangi bir hile yazılımı kullanmak kesinlikle yasaktır.</li>
+          <li>Kasıtlı bağlantı düşürme (rage-quit farming) veya sıra manipülasyonu yapan hesaplar ELO cezası alabilir veya askıya alınabilir.</li>
+          <li>Diğer oyunculara karşı hakaret, spam veya taciz içeren davranışlarda bulunan hesaplar kalıcı olarak yasaklanabilir.</li>
         </ul>
-        <div class="callout callout-warning">
-          <strong>Yaptırım:</strong> Hile veya kuralları ihlal ettiği tespit edilen hesaplar, herhangi bir ön bildirimde bulunulmaksızın kalıcı olarak askıya alınabilir, lig sıralamasından çıkarılabilir ve kazanılan tüm sanal ödüller sıfırlanabilir.
+      </section>
+
+      <section class="legal-section">
+        <h2>4. Sanal Para (W-Coin) Politikası</h2>
+        <p>W-Coin uygulama içi sanal para birimidir. Gerçek para karşılığı olmayıp herhangi bir nakit iade veya değişim hakkı yoktur. Hesap silme veya yasaklanma durumunda kullanılmamış W-Coin bakiyesi iade edilmez.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>5. Abonelik ve Satın Alma</h2>
+        <div class="callout">
+          <strong>Otomatik Yenileme:</strong> Pro üyelik abonelikleri dönem sonunda otomatik olarak yenilenir. İptal etmediğiniz sürece ücretlendirme devam eder.
         </div>
-      </section>
-
-      <section class="legal-section">
-        <h2>3. Sanal Para Birimleri ve Oyun İçi Öğeler (W-Coin)</h2>
-        <p>
-          Oyun içerisinde maç kazanarak, günlük kelime çözerek veya satın alarak elde edilen <strong>W-Coin</strong> ve kozmetik avatarlar sanal oyun içi öğelerdir:
-        </p>
+        <h3>İptal Adımları</h3>
         <ul>
-          <li>Sanal para birimleri gerçek para, mal veya hizmet karşılığında nakde çevrilemez.</li>
-          <li>Sanal öğeler başka bir oyuncuya, hesaba veya üçüncü tarafa devredilemez, satılamaz veya takas edilemez.</li>
-          <li>Hesabın kullanıcı tarafından silinmesi durumunda harcanmamış sanal coinler ve satın alımlar iade edilmez.</li>
+          <li><strong>iOS:</strong> Ayarlar → Apple ID → Abonelikler → Wordistan → Aboneliği İptal Et</li>
+          <li><strong>Android:</strong> Google Play → Profil → Ödemeler ve Abonelikler → Wordistan → İptal Et</li>
         </ul>
+        <p>İptal edilen abonelik, mevcut dönemin sonuna kadar aktif kalır. Kısmi dönem iadesi yapılmaz.</p>
       </section>
 
       <section class="legal-section">
-        <h2>4. Otomatik Yenilenen Abonelikler (Subscriptions)</h2>
-        <p>
-          Wordistan, kullanıcılara reklamsız deneyim ve ek ayrıcalıklar sunan isteğe bağlı <strong>"Wordistan Pro / Aylık Reklamsız"</strong> aboneliği sunabilir. Apple App Store (Guideline 3.1.2) ve Google Play Store kuralları uyarınca:
-        </p>
-        <ul>
-          <li><strong>Ödeme:</strong> Satın alma onayı verildiğinde ödeme tutarı Apple Kimliği veya Google Hesabınızdan tahsil edilir.</li>
-          <li><strong>Otomatik Yenileme:</strong> Mevcut abonelik döneminin bitiminden en az 24 saat önce iptal edilmediği sürece abonelik otomatik olarak yenilenir.</li>
-          <li><strong>Yenileme Ücreti:</strong> Mevcut dönemin bitimine 24 saat kala hesabınızdan yenileme ücreti tahsil edilir.</li>
-          <li><strong>İptal Adımları:</strong>
-            <ul>
-              <li><strong>iOS (Apple):</strong> Cihazınızın <em>Ayarlar > [Adınız] > Abonelikler > Wordistan > Aboneliği İptal Et</em> yolunu izleyebilirsiniz.</li>
-              <li><strong>Android (Google):</strong> <em>Google Play Store > Profil Simgesi > Ödemeler ve Abonelikler > Abonelikler > Wordistan > Aboneliği İptal Et</em> yolunu izleyebilirsiniz.</li>
-            </ul>
-          </li>
-        </ul>
+        <h2>6. Sorumluluk Sınırlaması</h2>
+        <p>Wordistan, uygulamayı "olduğu gibi" sunar. Teknik arızalar, sunucu kesintileri veya veri kaybından doğabilecek zararlardan hukuki sorumluluk kabul edilmez. Uygulama, herhangi bir zamanda herhangi bir özelliği değiştirme veya kaldırma hakkını saklı tutar.</p>
       </section>
 
       <section class="legal-section">
-        <h2>5. Fikri Mülkiyet Hakları</h2>
-        <p>
-          Wordistan uygulamasındaki tüm grafik tasarımlar, arayüz bileşenleri, kaynak kodları, kelime veri tabanı algoritması, ses efektleri, logolar ve ticari unvanlar geliştirici ekibine aittir ve uluslararası telif hakkı yasalarıyla korunmaktadır. Yazılı izin olmaksızın kısmen veya tamamen kopyalanamaz veya çoğaltılamaz.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>6. Sorumluluk Reddi (Disclaimer of Warranties)</h2>
-        <p>
-          Uygulama "olduğu gibi" (AS IS) sunulmaktadır. Geliştirici ekip, internet kesintileri, sunucu bakım çalışmaları veya üçüncü taraf altyapı arızalarından kaynaklanabilecek geçici aksaklıklardan sorumlu tutulamaz.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>7. Uyuşmazlık Çözümü ve Uygulanacak Hukuk</h2>
-        <p>
-          İşbu Sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Doğabilecek uyuşmazlıklarda yetkili mahkeme ve icra daireleri münhasıran Türkiye Cumhuriyeti mahkemeleridir.
-        </p>
+        <h2>7. Uygulanacak Hukuk</h2>
+        <p>Bu sözleşme Türkiye Cumhuriyeti yasalarına tabidir. Uyuşmazlıklarda İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
       </section>
 
       <section class="legal-section">
         <h2>8. İletişim</h2>
-        <p>
-          Kullanım koşulları ile ilgili sorularınız için <a href="mailto:destek@kelimeduellosu.app">destek@kelimeduellosu.app</a> adresinden bizimle iletişime geçebilirsiniz.
-        </p>
+        <ul>
+          <li><strong>E-Posta:</strong> <a href="mailto:destek@kelimeduellosu.app">destek@kelimeduellosu.app</a></li>
+          <li><strong>Web:</strong> <a href="https://wordistan.app">wordistan.app</a></li>
+        </ul>
       </section>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <ul class="footer-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik Politikası</a></li>
         <li><a href="terms.html">Kullanım Koşulları</a></li>
-        <li><a href="kvkk.html">KVKK Metni</a></li>
-        <li><a href="support.html">İletişim & Destek</a></li>
+        <li><a href="kvkk.html">KVKK</a></li>
+        <li><a href="support.html">Destek</a></li>
       </ul>
       <p class="copyright">© 2026 Wordistan. Tüm hakları saklıdır.</p>
     </div>

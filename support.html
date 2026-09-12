@@ -3,120 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İletişim, Destek & Hesap Silme - Wordistan</title>
-  <meta name="description" content="Wordistan (Worthy Words) oyuncu destek hattı, sıkça sorulan sorular ve web üzerinden hesap silme talebi.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Destek & Hesap Silme — Wordistan</title>
+  <meta name="description" content="Wordistan destek, iletişim ve hesap silme talep formu.">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand">
-        <div class="brand-icon">⚔️</div>
+        <img src="assets/app-icon.png" alt="Wordistan" class="brand-icon">
         <span>Wordistan</span>
       </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menü">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik</a></li>
-        <li><a href="terms.html">Kullanım Koşulları</a></li>
+        <li><a href="terms.html">Koşullar</a></li>
         <li><a href="kvkk.html">KVKK</a></li>
         <li><a href="support.html" class="btn-nav active">Destek</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Content Container -->
   <main class="container">
     <header class="doc-header">
-      <div class="badge">💬 Oyuncu Destek Merkezi</div>
-      <h1 class="doc-title">İletişim & Destek</h1>
-      <p class="doc-subtitle">
-        Bir sorunuz, öneriniz veya yardıma ihtiyacınız mı var? Ekibimizle doğrudan iletişime geçebilirsiniz.
-      </p>
+      <span class="badge">İletişim</span>
+      <h1 class="doc-title">Destek & Hesap Silme</h1>
+      <p class="doc-subtitle">Sorularınız, geri bildirimleriniz veya hesap/veri silme talepleriniz için buradayız.</p>
     </header>
 
-    <!-- Support Contacts Card -->
-    <div class="legal-card" style="margin-bottom: 2rem;">
+    <div class="support-grid">
+      <div class="support-card">
+        <h3>📧 E-Posta Desteği</h3>
+        <p>Tüm soru ve talepleriniz için bize ulaşın. En geç 24 saat içinde yanıtlıyoruz.</p>
+        <p style="margin-top: 0.5rem;"><a href="mailto:destek@kelimeduellosu.app"><strong>destek@kelimeduellosu.app</strong></a></p>
+      </div>
+      <div class="support-card">
+        <h3>🕐 Yanıt Süresi</h3>
+        <p>Destek talepleri hafta içi en geç 24 saat, hafta sonu en geç 48 saat içinde yanıtlanır.</p>
+      </div>
+    </div>
+
+    <div class="legal-card" style="margin-top: 1.5rem;">
       <section class="legal-section">
-        <h2>📬 Bize Ulaşın</h2>
-        <p>
-          Hata bildirimleri, iş birliği talepleri veya genel sorularınız için aşağıdaki e-posta adresimizden bize dilediğiniz an yazabilirsiniz. E-postalarınıza genellikle 24 saat içerisinde dönüş sağlanır.
-        </p>
+        <h2>Hesap ve Veri Silme Talebi</h2>
+        <p>Google Play Store ve Apple App Store politikaları uyarınca hesabınızı ve ilişkili tüm verilerinizi kalıcı olarak silme hakkına sahipsiniz.</p>
+
+        <h3>Uygulama İçinden Silme (Önerilen)</h3>
         <div class="callout callout-success">
-          <strong>Resmi Destek E-Postası:</strong> <a href="mailto:destek@kelimeduellosu.app" style="font-weight: 700;">destek@kelimeduellosu.app</a>
+          <strong>Profil → Ayarlar → "Hesabımı Sil"</strong> adımlarını izleyerek hesabınızı, oyun istatistiklerinizi ve tüm kişisel verilerinizi anında ve kalıcı olarak silebilirsiniz.
+        </div>
+
+        <h3>Web Üzerinden Silme Talebi</h3>
+        <p>Uygulamaya erişiminiz yoksa aşağıdaki bilgilerle bize e-posta gönderin:</p>
+        <ol>
+          <li>Hesabınıza kayıtlı <strong>e-posta adresi</strong></li>
+          <li>Uygulama içi <strong>kullanıcı adınız</strong></li>
+          <li>Konu satırına <strong>"Hesap Silme Talebi"</strong> yazın</li>
+        </ol>
+        <p><a href="mailto:destek@kelimeduellosu.app?subject=Hesap%20Silme%20Talebi"><strong>→ Hesap Silme Talebi Gönder</strong></a></p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Silinen Veriler</h2>
+        <p>Hesap silme işlemi geri alınamaz. Aşağıdaki veriler kalıcı olarak silinir:</p>
+        <ul>
+          <li>Kullanıcı profili (kullanıcı adı, e-posta, avatar)</li>
+          <li>Oyun istatistikleri (ELO, maç geçmişi, lig derecesi)</li>
+          <li>Günlük kelime serileri ve kelime geçmişi</li>
+          <li>Sanal para bakiyesi (W-Coin)</li>
+          <li>Arkadaş listesi ve sosyal veriler</li>
+          <li>Satın alma geçmişi ve kozmetik envanter</li>
+        </ul>
+        <div class="callout callout-warning">
+          <strong>Not:</strong> Aktif aboneliğiniz varsa önce iptal etmeniz gerekir. Hesap silme, App Store veya Google Play aboneliğinizi otomatik iptal etmez.
         </div>
       </section>
-    </div>
 
-    <!-- Account Deletion Box (Google Play Mandated) -->
-    <div class="legal-card" id="delete-account" style="border-color: rgba(239, 68, 68, 0.4); margin-bottom: 2rem;">
       <section class="legal-section">
-        <h2 style="color: #f87171;">🗑️ Hesap ve Veri Silme Talebi (Account Deletion)</h2>
-        <p>
-          Google Play ve Apple App Store kuralları gereği, hesabınızı ve ilişkili tüm verilerinizi kalıcı olarak silme hakkına sahipsiniz. Silme işlemi sonrasında kullanıcı adınız, ELO puanınız, maç geçmişiniz ve oyun envanteriniz veritabanından geri döndürülemez biçimde yok edilir.
-        </p>
+        <h2>Sık Sorulan Sorular</h2>
+        <h3>Hesabımı sildikten sonra geri alabilir miyim?</h3>
+        <p>Hayır. Hesap silme işlemi geri alınamaz. Tüm veriler kalıcı olarak yok edilir.</p>
 
-        <h3>Yöntem 1: Uygulama İçerisinden Anında Silme (Önerilen)</h3>
-        <p>
-          Uygulamayı açın > <strong>Profil</strong> sekmesine gidin > Sağ üstteki <strong>Ayarlar (Çark)</strong> simgesine dokunun > En alttaki kırmızı <strong>"Hesabımı Sil"</strong> butonunu onaylayın. Hesabınız ve tüm verileriniz anında silinir.
-        </p>
+        <h3>Misafir hesabımı nasıl silebilirim?</h3>
+        <p>Misafir hesapları da uygulama içinden aynı adımlarla silinebilir: Profil → Ayarlar → "Hesabımı Sil".</p>
 
-        <h3>Yöntem 2: Web Üzerinden Silme Talebi Gönderme</h3>
-        <p>
-          Uygulamayı cihazınızdan kaldırdıysanız veya erişemiyorsanız, hesabınıza kayıtlı e-posta adresinizden aşağıdaki bağlantıyı kullanarak silme talebi gönderebilirsiniz:
-        </p>
-        <div style="margin-top: 1rem;">
-          <a href="mailto:destek@kelimeduellosu.app?subject=Hesap%20Silme%20Talebi%20(Account%20Deletion)&body=Merhaba,%20Wordistan%20uygulamasındaki%20hesabımın%20ve%20tüm%20verilerimin%20kalıcı%20olarak%20silinmesini%20talep%20ediyorum.%0A%0AKullanıcı%20Adım:%20%0AKayıtlı%20E-postam:%20" class="btn-nav" style="background: #dc2626; display: inline-block;">
-            📧 Hesap Silme Talebi Gönder
-          </a>
-        </div>
-        <p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.8rem;">
-          * Talebiniz ulaştıktan sonra kimlik doğrulaması yapılarak 24-48 saat içinde veritabanı kayıtlarınız tamamen imha edilir ve tarafınıza bilgilendirme e-postası iletilir.
-        </p>
-      </section>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="legal-card">
-      <section class="legal-section">
-        <h2>❓ Sıkça Sorulan Sorular (SSS)</h2>
-
-        <h3>1. Canlı 1v1 Düellolarda ELO Puanı Nasıl Hesaplanır?</h3>
-        <p>
-          ELO sistemi, satranç standartlarına dayanan dinamik bir derecelendirme algoritmasıdır. Rakibiniz sizden daha yüksek ELO'ya sahipse galibiyetinizde daha fazla puan kazanırsınız. Eşit seviyedeki maçlarda skor farkı da ufak ELO bonusları sağlar.
-        </p>
-
-        <h3>2. Günlük Seri (Streak) Ne Zaman Sıfırlanır?</h3>
-        <p>
-          Günün yeni kelimesi her gece saat 00:00'da yayınlanır. Serinizi kaybetmemek için her gün en az 1 kez Günlük Kelime modunu tamamlamanız gerekir.
-        </p>
-
-        <h3>3. Reklamsız Pro Aboneliğimi Nasıl İptal Edebilirim?</h3>
-        <p>
-          Abonelikler doğrudan Apple veya Google hesabınıza bağlıdır. <strong>iOS'ta:</strong> Cihaz Ayarları > Apple ID > Abonelikler adımından; <strong>Android'de:</strong> Google Play Store > Profil > Ödemeler ve Abonelikler adımından dilediğiniz an tek tıkla iptal edebilirsiniz.
-        </p>
-
-        <h3>4. Satın Alımlarım Başka Bir Cihaza Aktarılır mı?</h3>
-        <p>
-          Evet! Aynı Apple ID veya Google Hesabıyla giriş yaptığınızda, oyun içindeki Ayarlar > "Satın Alımları Geri Yükle" butonuna dokunarak Pro aboneliğinizi geri yükleyebilirsiniz.
-        </p>
+        <h3>Aboneliğimi nasıl iptal ederim?</h3>
+        <ul>
+          <li><strong>iOS:</strong> Ayarlar → Apple ID → Abonelikler → Wordistan → İptal Et</li>
+          <li><strong>Android:</strong> Google Play → Profil → Ödemeler ve Abonelikler → İptal Et</li>
+        </ul>
       </section>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <ul class="footer-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik Politikası</a></li>
         <li><a href="terms.html">Kullanım Koşulları</a></li>
-        <li><a href="kvkk.html">KVKK Metni</a></li>
-        <li><a href="support.html">İletişim & Destek</a></li>
+        <li><a href="kvkk.html">KVKK</a></li>
+        <li><a href="support.html">Destek</a></li>
       </ul>
       <p class="copyright">© 2026 Wordistan. Tüm hakları saklıdır.</p>
     </div>

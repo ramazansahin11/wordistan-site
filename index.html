@@ -1,126 +1,114 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wordistan - Canlı 1v1 Kelime Düelloları & Günlük Kelime</title>
-  <meta name="description" content="Wordistan (Worthy Words): 45 saniyelik nefes kesici 1v1 canlı kelime düelloları, günlük kelime serileri ve rekabetçi ELO ligleri.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Wordistan — Kelime Düellosu</title>
+  <meta name="description"
+    content="Wordistan: 45 saniyelik 1v1 canlı kelime düelloları, günlük kelime serisi ve rekabetçi ELO ligleri.">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navbar -->
+
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand">
-        <div class="brand-icon">⚔️</div>
+        <img src="assets/app-icon.png" alt="Wordistan" class="brand-icon">
         <span>Wordistan</span>
       </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"
+        aria-label="Menü">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik</a></li>
-        <li><a href="terms.html">Kullanım Koşulları</a></li>
+        <li><a href="terms.html">Koşullar</a></li>
         <li><a href="kvkk.html">KVKK</a></li>
         <li><a href="support.html" class="btn-nav">Destek</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <header class="hero container-wide">
-    <div class="badge">🔥 Yeni Nesil Kelime Oyunu</div>
-    <h1>Zekanı Konuştur, Kelimeleri Fethet!</h1>
-    <p>
-      45 saniyelik nefes kesen 1v1 canlı düellolar, her sabah yenilenen Günlük Kelime serisi ve rekabetçi ELO ligleri Wordistan'da seni bekliyor.
-    </p>
-
+    <img src="assets/app-icon.png" alt="Wordistan" class="hero-icon">
+    <h1>Kelimelerle düello et, zekânı konuştur.</h1>
+    <p>45 saniyelik canlı 1v1 düellolar, her gün yenilenen kelime serisi ve rekabetçi lig sistemi.</p>
     <div class="hero-actions">
-      <a href="#" class="btn-download">
-        <span class="btn-icon">🍎</span>
-        <div>
-          <span class="btn-text-small">App Store'dan</span>
-          <span class="btn-text-large">İndir</span>
-        </div>
+      <a href="#" class="btn-store">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83" />
+          <path
+            d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11" />
+        </svg>
+        App Store
       </a>
-      <a href="#" class="btn-download">
-        <span class="btn-icon">🤖</span>
-        <div>
-          <span class="btn-text-small">Google Play'den</span>
-          <span class="btn-text-large">İndir</span>
-        </div>
+      <a href="#" class="btn-store">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm.91-.91L19.97 12 17.72 9.79l-2.76 1.66 2.76 2.76zM6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z" />
+        </svg>
+        Google Play
       </a>
     </div>
   </header>
 
-  <!-- Feature Grid -->
   <main class="container-wide">
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon">⚔️</div>
+        <div class="feature-icon green">⚔️</div>
         <h3 class="feature-title">1v1 Canlı Düellolar</h3>
-        <p class="feature-desc">
-          Aynı 7 harften 45 saniyede en çok kelimeyi türet. Gerçek zamanlı puan akışı ve adil eşleşmeyle heyecanı dorukta yaşa.
+        <p class="feature-desc">Aynı 7 harften 45 saniyede en çok kelimeyi türet. Gerçek zamanlı puan akışı ve adil ELO
+          eşleşmesi.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon amber">☀️</div>
+        <h3 class="feature-title">Günlük Kelime</h3>
+        <p class="feature-desc">Her gece 00:00'da güncellenen gizli kelimeyi 6 tahminde bul. Günlük serini koru.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon accent">🏆</div>
+        <h3 class="feature-title">ELO Ligleri</h3>
+        <p class="feature-desc">Bronzdan Şampiyona tırman. Dinamik ELO sistemiyle seviyene uygun rakiplerle yarış.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon green">📚</div>
+        <h3 class="feature-title">45.000+ Kelime</h3>
+        <p class="feature-desc">TDK onaylı zengin Türkçe kelime havuzu ve temiz harf dağılımı ile adil oyun deneyimi.
         </p>
       </div>
-
       <div class="feature-card">
-        <div class="feature-icon">☀️</div>
-        <h3 class="feature-title">Günlük Kelime Serisi</h3>
-        <p class="feature-desc">
-          Her gece 00:00'da güncellenen gizli kelimeyi 6 tahminde bul. Günlük serini (streak) koru ve zihnini her sabah zinde tut.
+        <div class="feature-icon amber">👥</div>
+        <h3 class="feature-title">Arkadaş Düelloları</h3>
+        <p class="feature-desc">Arkadaşlarını ekle, canlı düello daveti gönder ve kimin kelime dağarcığı daha güçlü gör.
         </p>
       </div>
-
       <div class="feature-card">
-        <div class="feature-icon">🏆</div>
-        <h3 class="feature-title">ELO Ligi & Sıralamalar</h3>
-        <p class="feature-desc">
-          Bronzdan Şampiyon ligine tırman! Satranç standardındaki dinamik ELO sistemiyle seviyene uygun rakiplerle yarış.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">📚</div>
-        <h3 class="feature-title">45.000+ Kelimelik Hazne</h3>
-        <p class="feature-desc">
-          TDK onaylı zengin Türkçe kelime algoritması ve temiz harf dağılımı sayesinde kesintisiz ve adil oyun deneyimi.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">👥</div>
-        <h3 class="feature-title">Dostluk Maçları & Davetler</h3>
-        <p class="feature-desc">
-          Arkadaşlarını ekle, canlı düello daveti gönder ve kimin kelime dağarcığının daha güçlü olduğunu anında gör.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">✨</div>
-        <h3 class="feature-title">Reklamsız Pro Seçeneği</h3>
-        <p class="feature-desc">
-          Dilediğin zaman Pro üyeliğe geçerek tüm reklamları kaldırabilir, sınırsız antrenman ve kelime pratiği yapabilirsin.
-        </p>
+        <div class="feature-icon accent">✨</div>
+        <h3 class="feature-title">Reklamsız Pro</h3>
+        <p class="feature-desc">Pro üyelik ile tüm reklamları kaldır, sınırsız antrenman ve kelime pratiği yap.</p>
       </div>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <ul class="footer-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik Politikası</a></li>
         <li><a href="terms.html">Kullanım Koşulları</a></li>
-        <li><a href="kvkk.html">KVKK Metni</a></li>
-        <li><a href="support.html">İletişim & Destek</a></li>
+        <li><a href="kvkk.html">KVKK</a></li>
+        <li><a href="support.html">Destek</a></li>
       </ul>
       <p class="copyright">© 2026 Wordistan. Tüm hakları saklıdır.</p>
     </div>
   </footer>
 
 </body>
+
 </html>

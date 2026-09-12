@@ -3,123 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KVKK Aydınlatma Metni - Wordistan</title>
-  <meta name="description" content="6698 Sayılı Kişisel Verilerin Korunması Kanunu Uyarınca Wordistan Aydınlatma Metni.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>KVKK Aydınlatma Metni — Wordistan</title>
+  <meta name="description" content="Wordistan 6698 Sayılı KVKK Aydınlatma Metni.">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand">
-        <div class="brand-icon">⚔️</div>
+        <img src="assets/app-icon.png" alt="Wordistan" class="brand-icon">
         <span>Wordistan</span>
       </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menü">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik</a></li>
-        <li><a href="terms.html">Kullanım Koşulları</a></li>
+        <li><a href="terms.html">Koşullar</a></li>
         <li><a href="kvkk.html" class="active">KVKK</a></li>
         <li><a href="support.html" class="btn-nav">Destek</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Content Container -->
   <main class="container">
     <header class="doc-header">
-      <div class="badge">🇹🇷 6698 Sayılı Kanun Uyarınca</div>
+      <span class="badge">6698 Sayılı Kanun</span>
       <h1 class="doc-title">KVKK Aydınlatma Metni</h1>
-      <p class="doc-subtitle">
-        Kişisel verilerinizin 6698 sayılı Kişisel Verilerin Korunması Kanunu'na ("KVKK") uygun olarak işlenmesine ve korunmasına azami hassasiyet gösteriyoruz.
-      </p>
-      <span class="last-updated">Yürürlük Tarihi: 12 Eylül 2026</span>
+      <p class="doc-subtitle">Kişisel Verilerin Korunması Kanunu Madde 10 uyarınca aydınlatma yükümlülüğümüz kapsamında.</p>
+      <span class="last-updated">Son Güncelleme: 12 Eylül 2026</span>
     </header>
 
     <div class="legal-card">
       <section class="legal-section">
-        <h2>1. Veri Sorumlusunun Kimliği</h2>
-        <p>
-          6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") Madde 10 kapsamında, <strong>Wordistan (Worthy Words) Geliştirici Ekibi</strong> olarak "Veri Sorumlusu" sıfatıyla kişisel verilerinizi işlemekteyiz.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>2. İşlenen Kişisel Veri Kategorileri</h2>
-        <p>Uygulamamız kapsamında işlenen veriler şunlardır:</p>
+        <h2>1. Veri Sorumlusu</h2>
+        <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla hareket eden:</p>
         <ul>
-          <li><strong>Kimlik ve Profil Bilgisi:</strong> Kullanıcı adı, profil avatar simgesi, benzersiz kullanıcı kimliği (UUID).</li>
-          <li><strong>İletişim Bilgisi:</strong> E-posta adresi (yalnızca e-posta ile kayıt olunan hesaplar için).</li>
-          <li><strong>İşlem Güvenliği ve Cihaz Bilgisi:</strong> Canlı düello eşleşmesinde gecikme (ping) süresi, IP adresi (oturum süresince geçici), işletim sistemi sürümü, donanım modeli.</li>
-          <li><strong>Oyun ve Etkinlik Bilgisi:</strong> ELO puanı, kazanma/kaybetme sayısı, bulunan kelime geçmişi, günlük seri (streak) verileri, envanter kozmetikleri.</li>
+          <li><strong>Uygulama:</strong> Wordistan (Worthy Words)</li>
+          <li><strong>İletişim:</strong> <a href="mailto:destek@kelimeduellosu.app">destek@kelimeduellosu.app</a></li>
+          <li><strong>Web:</strong> <a href="https://wordistan.app">wordistan.app</a></li>
         </ul>
       </section>
 
       <section class="legal-section">
-        <h2>3. Kişisel Verilerin İşlenme Amaçları ve Hukuki Sebepleri</h2>
-        <p>Kişisel verileriniz KVKK'nın 5. maddesinde yer alan aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:</p>
+        <h2>2. İşlenen Kişisel Veriler</h2>
         <ul>
-          <li><strong>Sözleşmenin Kurulması ve İfası (KVKK m. 5/2-c):</strong> Kullanıcı kaydının oluşturulması, 1v1 canlı düellolarda eşleşme sağlanması ve oyun ilerlemenizin bulutta saklanması.</li>
-          <li><strong>Meşru Menfaat (KVKK m. 5/2-f):</strong> Adil bir oyun ortamı (Fair Play) sağlamak, hile/bot kullanımını engellemek, sistem performansını iyileştirmek ve uygulama kararlılığını korumak.</li>
-          <li><strong>Hukuki Yükümlülük (KVKK m. 5/2-ç):</strong> Yetkili adli veya idari makamlarca talep edilmesi halinde yasal bildirimlerin yerine getirilmesi.</li>
+          <li><strong>Kimlik:</strong> Kullanıcı adı, e-posta adresi, profil avatarı</li>
+          <li><strong>İletişim:</strong> E-posta adresi (destek talepleri için)</li>
+          <li><strong>İşlem Güvenliği:</strong> IP adresi (geçici), oturum tokenları, cihaz bilgileri</li>
+          <li><strong>Oyun Verileri:</strong> ELO puanı, maç geçmişi, kelime serileri, lig derecesi, sanal para (W-Coin)</li>
         </ul>
       </section>
 
       <section class="legal-section">
-        <h2>4. Kişisel Verilerin Aktarımı (Yurt Dışı Aktarımı Dahil)</h2>
-        <p>
-          Kişisel verileriniz, üçüncü şahıslara satılmaz, pazarlama amacıyla izinsiz devredilmez. Yalnızca oyun altyapısının sürdürülebilmesi amacıyla:
-        </p>
+        <h2>3. İşleme Amaçları</h2>
         <ul>
-          <li><strong>Veri Tabanı ve Sunucu Hizmeti:</strong> Kimlik doğrulama ve veritabanı sağlayıcımız olan <em>Supabase Inc.</em>'in Avrupa Birliği (Frankfurt, Almanya) sunucularında GDPR standartlarına uygun olarak barındırılmaktadır.</li>
-          <li><strong>Reklam Hizmeti:</strong> Ücretsiz versiyonu kullanan oyuncularımıza ödüllü ve geçiş reklamları sunulması için <em>Google LLC (AdMob)</em> ile sınırlı anonim reklam tanımlayıcıları paylaşılabilir.</li>
+          <li>Üyelik oluşturma ve kimlik doğrulama</li>
+          <li>Canlı 1v1 düello eşleşmesi ve ELO hesaplaması</li>
+          <li>Günlük kelime serisi, sıralama tabloları ve lig yönetimi</li>
+          <li>Uygulama içi satın alma ve abonelik doğrulama</li>
+          <li>Reklam gösterimi (Google AdMob)</li>
+          <li>Destek taleplerinin yanıtlanması</li>
+          <li>Hile ve kötüye kullanım tespiti</li>
         </ul>
       </section>
 
       <section class="legal-section">
-        <h2>5. İlgili Kişinin (Veri Sahibinin) Hakları (KVKK Madde 11)</h2>
-        <p>KVKK'nın 11. maddesi uyarınca veri sahipleri olarak aşağıdaki haklara sahipsiniz:</p>
-        <ol>
-          <li>Kişisel verinizin işlenip işlenmediğini öğrenme,</li>
-          <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,</li>
-          <li>Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
-          <li>Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme,</li>
-          <li>Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,</li>
-          <li>KVKK ve ilgili diğer kanun hükümlerine uygun olarak işlenmiş olmasına rağmen, işlenmesini gerektiren sebeplerin ortadan kalkması hâlinde kişisel verilerinizin silinmesini veya yok edilmesini isteme,</li>
-          <li>Düzeltme veya silme işlemlerinin, kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
-          <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,</li>
-          <li>Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme.</li>
-        </ol>
+        <h2>4. Hukuki Dayanak</h2>
+        <p>Kişisel verileriniz KVKK Madde 5/2 kapsamında aşağıdaki hukuki sebeplere dayalı olarak işlenmektedir:</p>
+        <ul>
+          <li>Sözleşmenin kurulması ve ifası (oyun hizmeti sunulması)</li>
+          <li>Meşru menfaat (hile tespiti ve uygulama güvenliği)</li>
+          <li>Açık rıza (kişiselleştirilmiş reklam tercihleri)</li>
+          <li>Hukuki yükümlülük (6698 KVKK saklama gereklilikleri)</li>
+        </ul>
       </section>
 
       <section class="legal-section">
-        <h2>6. Başvuru ve Verilerinizi Silme Yöntemi</h2>
-        <p>
-          Yukarıda belirtilen haklarınızı kullanmak ve kişisel verilerinizin tamamen silinmesini talep etmek için:
-        </p>
-        <div class="callout callout-success">
-          <strong>Anında Silme:</strong> Uygulama içerisinden <em>Profil > Ayarlar > "Hesabımı Sil"</em> seçeneğini kullanarak hesabınızı ve veritabanındaki tüm verilerinizi hemen silebilirsiniz.
+        <h2>5. Yurt Dışına Veri Aktarımı</h2>
+        <div class="callout callout-warning">
+          <strong>Bilgilendirme:</strong> Oyun verileri Supabase Cloud tarafından Avrupa Birliği (Frankfurt, Almanya) veri merkezlerinde GDPR uyumlu olarak barındırılmaktadır. KVKK Madde 9 uyarınca yeterli koruma bulunan ülkeye aktarım kapsamındadır.
         </div>
-        <p>
-          Veya talebinizi yazılı olarak <a href="mailto:destek@kelimeduellosu.app">destek@kelimeduellosu.app</a> e-posta adresimize iletebilir veya <a href="support.html">Destek Sayfamızdan</a> başvurabilirsiniz. Talepleriniz en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.
-        </p>
+        <p>Google AdMob reklam verileri Google'ın küresel altyapısında işlenebilir. Cihaz ayarlarınızdan kişiselleştirilmiş reklamları devre dışı bırakabilirsiniz.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6. Madde 11 — Haklarınız</h2>
+        <p>KVKK'nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:</p>
+        <ul>
+          <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+          <li>İşlenmiş ise buna ilişkin bilgi talep etme</li>
+          <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+          <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+          <li>Eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme</li>
+          <li>KVKK Madde 7 kapsamında silinmesini veya yok edilmesini isteme</li>
+          <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+          <li>Kanuna aykırı işlenmesi sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>7. Başvuru</h2>
+        <p>Haklarınızı kullanmak için <a href="mailto:destek@kelimeduellosu.app">destek@kelimeduellosu.app</a> adresine kimliğinizi doğrulayan bilgiler ile başvurabilirsiniz. Başvurunuz en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.</p>
+        <p>Uygulama içi hesap silme: <strong>Profil → Ayarlar → "Hesabımı Sil"</strong></p>
       </section>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <ul class="footer-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik Politikası</a></li>
         <li><a href="terms.html">Kullanım Koşulları</a></li>
-        <li><a href="kvkk.html">KVKK Metni</a></li>
-        <li><a href="support.html">İletişim & Destek</a></li>
+        <li><a href="kvkk.html">KVKK</a></li>
+        <li><a href="support.html">Destek</a></li>
       </ul>
       <p class="copyright">© 2026 Wordistan. Tüm hakları saklıdır.</p>
     </div>

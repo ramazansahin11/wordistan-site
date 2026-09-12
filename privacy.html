@@ -3,129 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gizlilik Politikası (Privacy Policy) - Wordistan</title>
-  <meta name="description" content="Wordistan (Worthy Words) mobil uygulaması gizlilik politikası ve kişisel veri koruma ilkeleri.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Gizlilik Politikası — Wordistan</title>
+  <meta name="description" content="Wordistan gizlilik politikası ve kişisel veri koruma ilkeleri.">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand">
-        <div class="brand-icon">⚔️</div>
+        <img src="assets/app-icon.png" alt="Wordistan" class="brand-icon">
         <span>Wordistan</span>
       </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menü">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
       <ul class="nav-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html" class="active">Gizlilik</a></li>
-        <li><a href="terms.html">Kullanım Koşulları</a></li>
+        <li><a href="terms.html">Koşullar</a></li>
         <li><a href="kvkk.html">KVKK</a></li>
         <li><a href="support.html" class="btn-nav">Destek</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Content Container -->
   <main class="container">
     <header class="doc-header">
-      <div class="badge">🛡️ Güvenlik & Gizlilik Standartları</div>
+      <span class="badge">Gizlilik & Güvenlik</span>
       <h1 class="doc-title">Gizlilik Politikası</h1>
-      <p class="doc-subtitle">
-        Wordistan (Worthy Words) olarak kişisel verilerinizin güvenliğine ve mahremiyetine en üst düzeyde önem veriyoruz.
-      </p>
+      <p class="doc-subtitle">Kişisel verilerinizin güvenliğine ve mahremiyetine en üst düzeyde önem veriyoruz.</p>
       <span class="last-updated">Son Güncelleme: 12 Eylül 2026</span>
     </header>
 
     <div class="legal-card">
       <section class="legal-section">
-        <h2>1. Giriş ve Genel Bakış</h2>
-        <p>
-          Bu Gizlilik Politikası, <strong>Wordistan</strong> ("Uygulama", "biz", "bize" veya "bizim") tarafından sunulan iOS ve Android mobil uygulamalarımızı kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklamaktadır.
-        </p>
-        <p>
-          Uygulamamızı indirerek, kurarak veya kullanarak bu Gizlilik Politikasında belirtilen veri işleme faaliyetlerini kabul etmiş olursunuz. Apple App Store ve Google Play Store Geliştirici Politikaları ile 6698 sayılı KVKK ve GDPR uyumluluğu gözetilmektedir.
-        </p>
+        <h2>1. Giriş</h2>
+        <p>Bu Gizlilik Politikası, <strong>Wordistan</strong> ("Uygulama") tarafından sunulan iOS ve Android mobil uygulamalarını kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklamaktadır.</p>
+        <p>Uygulamamızı indirerek, kurarak veya kullanarak bu Gizlilik Politikasında belirtilen veri işleme faaliyetlerini kabul etmiş olursunuz. Apple App Store ve Google Play Store Geliştirici Politikaları ile 6698 sayılı KVKK ve GDPR uyumluluğu gözetilmektedir.</p>
       </section>
 
       <section class="legal-section">
-        <h2>2. Toplanan Bilgiler ve Veri Türleri</h2>
-        <p>
-          Uygulamamızın sağlıklı çalışabilmesi, canlı düello eşleşmelerinin sağlanması ve oyun deneyiminizin kaydedilmesi için aşağıdaki asgari veriler işlenmektedir:
-        </p>
+        <h2>2. Toplanan Bilgiler</h2>
         <ul>
-          <li><strong>Hesap Bilgileri:</strong> Kayıtlı kullanıcılar için e-posta adresi, kullanıcı adı, profil avatarı. Misafir (Anonim) kullanıcılar için rastgele üretilen anonim kullanıcı kimliği (UUID).</li>
-          <li><strong>Oyun İstatistikleri ve İlerleme:</strong> ELO puanı, kazanılan/kaybedilen maçlar, tamamlanan günlük kelimeler, kelime serileri (streak), sanal coin miktarı ve lig derecesi.</li>
-          <li><strong>Cihaz ve Ağ Verileri:</strong> Canlı 1v1 düellolarda adil eşleşme ve düşük gecikme (ping) hesaplaması için IP adresi (geçici), cihaz modeli, işletim sistemi sürümü ve uygulama sürümü.</li>
-          <li><strong>Finansal Bilgiler:</strong> Kredi kartı veya ödeme bilgileriniz tarafımızca <u>kesinlikle toplanmaz veya saklanmaz</u>. Tüm uygulama içi satın alımlar ve abonelikler doğrudan <strong>Apple App Store (StoreKit)</strong> ve <strong>Google Play Billing</strong> altyapıları üzerinden güvenle yürütülür.</li>
+          <li><strong>Hesap Bilgileri:</strong> Kayıtlı kullanıcılar için e-posta adresi, kullanıcı adı, profil avatarı. Misafir kullanıcılar için rastgele anonim kimlik (UUID).</li>
+          <li><strong>Oyun İstatistikleri:</strong> ELO puanı, kazanılan/kaybedilen maçlar, günlük kelime serileri (streak), sanal coin miktarı ve lig derecesi.</li>
+          <li><strong>Cihaz ve Ağ Verileri:</strong> Canlı düellolarda adil eşleşme için geçici IP adresi, cihaz modeli, işletim sistemi ve uygulama sürümü.</li>
+          <li><strong>Finansal Bilgiler:</strong> Kredi kartı veya ödeme bilgileriniz tarafımızca <u>kesinlikle toplanmaz</u>. Tüm satın alımlar doğrudan <strong>Apple StoreKit</strong> ve <strong>Google Play Billing</strong> üzerinden yürütülür.</li>
         </ul>
       </section>
 
       <section class="legal-section">
-        <h2>3. Üçüncü Taraf Hizmetler ve SDK Entegrasyonları</h2>
-        <p>
-          Uygulamamız güvenilir küresel teknoloji ortaklarının resmi SDK'larını kullanmaktadır. Bu hizmetler kendi gizlilik politikalarına tabidir:
-        </p>
+        <h2>3. Üçüncü Taraf Hizmetler</h2>
         <ul>
-          <li><strong>Google AdMob:</strong> Ücretsiz kullanıcılara geçiş reklamları ve ödüllü ipucu videoları sunmak amacıyla Google Reklam Tanımlayıcısı (IDFA / GAID) kullanılabilir. Cihaz ayarlarınızdan kişiselleştirilmiş reklamları kapatabilirsiniz.</li>
-          <li><strong>Supabase Cloud (PostgreSQL & Realtime):</strong> Kimlik doğrulama, kullanıcı profili, canlı maç kanalları ve sıralama tabloları için Avrupa Birliği (Frankfurt, Almanya) veri merkezlerinde GDPR uyumlu olarak barındırılır. Veriler Row Level Security (RLS) ile korunur.</li>
-          <li><strong>RevenueCat / App Store / Google Play:</strong> Pro üyelik abonelik durumunun doğrulanması ve senkronizasyonu için kullanılır.</li>
+          <li><strong>Google AdMob:</strong> Ücretsiz kullanıcılara reklam sunmak amacıyla Google Reklam Tanımlayıcısı (IDFA/GAID) kullanılabilir. Cihaz ayarlarınızdan kişiselleştirilmiş reklamları kapatabilirsiniz.</li>
+          <li><strong>Supabase Cloud:</strong> Kimlik doğrulama, kullanıcı profili ve canlı maç kanalları için AB (Frankfurt) veri merkezlerinde GDPR uyumlu olarak barındırılır. Row Level Security (RLS) ile korunur.</li>
+          <li><strong>App Store / Google Play:</strong> Pro abonelik durumunun doğrulanması ve senkronizasyonu için kullanılır.</li>
         </ul>
       </section>
 
       <section class="legal-section">
         <h2>4. Çocukların Gizliliği (COPPA & GDPR-K)</h2>
         <div class="callout callout-warning">
-          <strong>Önemli Bilgilendirme:</strong> Wordistan her yaştan kullanıcı için eğitici ve zihinsel gelişim destekleyici bir kelime oyunudur. 13 yaşın (veya ülkenizdeki yasal yaş sınırının) altındaki çocuklardan bilerek kişisel veri toplamıyoruz. Çocuklara yönelik uygunsuz veya zararlı içerik kelime veri tabanımızda yer almaz.
+          <strong>Önemli:</strong> Wordistan her yaştan kullanıcı için eğitici bir kelime oyunudur. 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamıyoruz. Uygunsuz içerik kelime veri tabanımızda yer almaz.
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>5. Hesap ve Kişisel Veri Silme Hakkı (Account Deletion)</h2>
-        <p>
-          Apple App Store (Guideline 5.1.1) ve Google Play Store Veri Güvenliği politikaları uyarınca hesabınızı ve ilişkili tüm verilerinizi dilediğiniz an kalıcı olarak silme hakkına sahipsiniz:
-        </p>
+        <h2>5. Hesap ve Veri Silme</h2>
+        <p>Apple App Store (Guideline 5.1.1) ve Google Play politikaları uyarınca hesabınızı ve tüm verilerinizi kalıcı olarak silme hakkına sahipsiniz:</p>
         <div class="callout callout-success">
-          <strong>Uygulama İçinden Silme:</strong> Profil > Ayarlar > <em>"Hesabımı Sil"</em> adımlarını izleyerek tek tıkla hesabınızı, kullanıcı adınızı, oyun istatistiklerinizi ve tüm kişisel verilerinizi anında ve kalıcı olarak silebilirsiniz.
+          <strong>Uygulama İçinden:</strong> Profil → Ayarlar → "Hesabımı Sil" adımlarını izleyerek tek tıkla tüm kişisel verilerinizi kalıcı olarak silebilirsiniz.
         </div>
-        <p>
-          Uygulamaya erişiminiz yoksa veya web üzerinden talep oluşturmak isterseniz, <a href="support.html">Destek & Hesap Silme Formu</a> sayfamızdan talebinizi iletebilirsiniz. Talebiniz en geç 24 saat içerisinde sonuçlandırılır.
-        </p>
+        <p>Web üzerinden talep oluşturmak isterseniz <a href="support.html">Destek & Hesap Silme</a> sayfamızı ziyaret edin. Talebiniz en geç 24 saat içinde sonuçlandırılır.</p>
       </section>
 
       <section class="legal-section">
-        <h2>6. Veri Güvenliği ve Saklama</h2>
-        <p>
-          Kişisel verileriniz aktarım sırasında TLS 1.3 / SSL şifreleme protokolleriyle şifrelenir. Sunucu tarafında yetkisiz erişimi engellemek için çift faktörlü güvenlik, şifreli token depolama ve veritabanı düzeyinde yetkilendirme (RLS) uygulanmaktadır.
-        </p>
+        <h2>6. Veri Güvenliği</h2>
+        <p>Kişisel verileriniz TLS 1.3/SSL ile şifrelenir. Sunucu tarafında çift faktörlü güvenlik, şifreli token depolama ve veritabanı düzeyinde yetkilendirme (RLS) uygulanır.</p>
       </section>
 
       <section class="legal-section">
-        <h2>7. İletişim ve Veri Sorumlusu</h2>
-        <p>
-          Bu Gizlilik Politikası veya kişisel verileriniz ile ilgili soru, öneri ve talepleriniz için bizimle doğrudan iletişime geçebilirsiniz:
-        </p>
+        <h2>7. İletişim</h2>
         <ul>
-          <li><strong>Uygulama:</strong> Wordistan (Worthy Words)</li>
           <li><strong>E-Posta:</strong> <a href="mailto:destek@kelimeduellosu.app">destek@kelimeduellosu.app</a></li>
-          <li><strong>Web Sitesi:</strong> <a href="https://wordistan.app">https://wordistan.app</a></li>
+          <li><strong>Web:</strong> <a href="https://wordistan.app">wordistan.app</a></li>
         </ul>
       </section>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <ul class="footer-links">
-        <li><a href="index.html">Anasayfa</a></li>
         <li><a href="privacy.html">Gizlilik Politikası</a></li>
         <li><a href="terms.html">Kullanım Koşulları</a></li>
-        <li><a href="kvkk.html">KVKK Metni</a></li>
-        <li><a href="support.html">İletişim & Destek</a></li>
+        <li><a href="kvkk.html">KVKK</a></li>
+        <li><a href="support.html">Destek</a></li>
       </ul>
       <p class="copyright">© 2026 Wordistan. Tüm hakları saklıdır.</p>
     </div>
